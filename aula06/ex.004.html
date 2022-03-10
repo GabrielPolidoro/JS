@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My First page</title>
+    <style>
+        h1{
+            color: yellowgreen;
+        }
+    </style>
+</head>
+<body>
+ 
+    <script>
+        var name = window.prompt('What is your name')
+        document.write(`Hello, ${name}! Your name has ${name.length} letters. <br>`) 
+        document.write(`Your name with uppercase letters is ${name.toUpperCase()}. <br>`) 
+        document.write(`Your name with lowercase letters is ${name.toLowerCase()}.`)
+    </script>
+</body>
+</html>
