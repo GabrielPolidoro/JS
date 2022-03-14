@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>First step with DOM</title>
+    <style>
+        body{
+            background-color: rgb(47, 131, 180);
+            color: #fff;
+            font: normal 18pt arial;
+        }
+    </style>
+</head>
+<body>
+    <h1>Starting to study with DOM</h1>
+    <p>Here is the result</p>
+    <p>Starting to use the <strong>DOM</strong> in JavaScript.</p>
+    <div id="msg">Click On Me</div>
+
+
+    <script>
+        var p1 = document.getElementsByTagName('p')[0]
+        document.write('it is written like this: ' + p1.innerText)
+
+        // 2 diferent types of selector
+
+        var d = document.getElementById('msg')
+        d.style.background = 'blue'
+
+        // Or
+
+        var d = document.querySelector('div#msg')
+	    d.style.background = 'blue'
+
+        
+    </script>
+</body>
+</html>
