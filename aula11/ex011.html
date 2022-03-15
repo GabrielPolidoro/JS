@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Imigração</title>
+</head>
+<body>
+    <h1>CHECAGEM DE PASSAPORTES</h1>
+    <h2>ATENÇÃO</h2>
+    <p>Passaportes da Rússia estão proibidos de entrar no país!</p>
+    País em que você nasceu: <input type="text" name="textn" id="nasc">
+    <input type="button" value="Checar" onclick="verificar()">
+    <div id="res">
+
+    </div>
+
+
+    <script>
+        function verificar() {
+            var nascimento = document.getElementById ('nasc')
+            var n = nascimento.value
+            var res = document.getElementById ('res')
+            res.innerHTML = `<p>Seu passaporte é do país: <strong>${n}</strong>.`
+            if (n == 'russia', 'Russia') {
+                res.innerHTML += '<p>Você está <strong>PROIBIDO</strong> de entrar neste país!</p>' 
+            }
+            else{
+                res.innerHTML += '<p>Bem-vindo ao Brasil!</p>'
+            }
+            res.innerHTML += '<p>Nós não apoiamos a guerra, somos a favor da PAZ!</p>'
+        }
+    </script>
+</body>
+</html>
