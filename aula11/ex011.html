@@ -20,10 +20,10 @@
     <script>
         function verificar() {
             var nascimento = document.getElementById ('nasc')
-            var n = nascimento.value
+            var n = nascimento.value.toLowerCase()
             var res = document.getElementById ('res')
             res.innerHTML = `<p>Seu passaporte é do país: <strong>${n}</strong>.`
-            if (n == 'Russia') {
+            if (n == 'russia') {
                 res.innerHTML += '<p>Você está <strong>PROIBIDO</strong> de entrar neste país!</p>' 
             }
             else{
