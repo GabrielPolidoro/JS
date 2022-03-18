@@ -24,13 +24,8 @@ footer{
     font-style: italic;
 }
 
-#imagem{
+img{
     width: 250px;
     height: 250px;
     border-radius: 50%;
-}
-
-div {
-    text-align: center;
-    padding: 8px;
 }
