@@ -5,20 +5,23 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./style.css">
-    <title>Hora do Dia</title>
+    <title>Tabuada</title>
 </head>
 <body>
     <header>
-        <h1>Hora do Dia</h1>
+        <h1>Tabuada</h1>
     </header>
 
     <section>   
 
-        <div id="msg">
-            aqui vai a mensagem
+        <div>
+            <p>Número: <input type="number" name="txtn" id="txtn"></p>
+            <input type="button" value="Gerar Tabuada" onclick="calcular()">
         </div>
-        <div id="foto">
-            <img id="imagem" src="manha.jpg" alt="foto da manhã">
+
+        <div>
+            <textarea name="txta" id="txta" cols="30" rows="10"> Digite um número acima   
+            </textarea>
         </div>
 
     </section>
@@ -27,7 +30,7 @@
         <p>&copy; CursoemVídeo</p>
     </footer>
 
-    <script src="./script.js">
+    <script src="script.js">
         
     </script>
 </body>

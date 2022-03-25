@@ -23,14 +23,3 @@ footer{
     text-align: center;
     font-style: italic;
 }
-
-#imagem{
-    width: 250px;
-    height: 250px;
-    border-radius: 50%;
-}
-
-div {
-    text-align: center;
-    padding: 8px;
-}
